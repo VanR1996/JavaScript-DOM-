@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>Image Gallery</title>
+		<link rel="stylesheet" href="../css/layout.css" media = "screen" />
+	</head>
+	<body>
+		<h1>Snapsshots</h1>
+		<ul>
+			<li>
+				<a href="../img/fireworks.jpg" onclick="showPic(this);return false;" title="A fireworks display">Firewokrs&nbsp;&nbsp;</a>
+			</li>
+			<li>
+				<a href="../img/coffee.jpg"  onclick="showPic(this);return false;"title="A cup of coffee">&nbsp;&nbsp;Coffee&nbsp;&nbsp;</a>
+			</li>
+			<li>
+				<a href="../img/rose.jpg"  onclick="showPic(this);return false;"title="A red,red rose">&nbsp;&nbsp;Rose&nbsp;&nbsp;</a>
+			</li>
+			<li>
+				<a href="../img/bigben.jpg"  onclick="showPic(this);return false;" title="The famous clock">&nbsp;&nbsp;Big Ben</a>
+			</li>
+		</ul>
+		<img id="placeholder" src="../img/placeholder.gif" alt="my iamge gallery" />
+		<p id="desciption">Choose an image.</p>
+		<script type="text/javascript" src="../script/showPic.js" ></script>	
+		<!--
+			5.2.1 "javacript":伪协议
+			伪协议是非标准化的协议
+			<a href="javascript:popUp('../img/coffee.jpg');">Example</a>
+      	-->
+      	<!--
+			<a href="#" onclick="popUp('https://www.example.com/');return false">Example</a>
+          	<a href="https://www.example.com" onclick="popUp(this.href);return false;">Example</a>
+          -->
+          
+	</body>
+</html>
+
+
+<script>	
+	window.onload = countBodyChildren;
+</script>	
+
+
