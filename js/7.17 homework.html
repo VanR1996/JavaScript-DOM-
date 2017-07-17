@@ -25,17 +25,17 @@
 			var student = document.getElementsByTagName("input");
 			function studentName(){
 				var strName = "";
-			    strName +=student[0].value;          
+			    strName =student[0].value;          
 				document.getElementById("name").innerHTML = strName;
 			}
 			function studentAge(){
 				strAge = "";
-			    strAge +=student[1].value;          
+			    strAge =student[1].value;          
 				document.getElementById("age").innerHTML = strAge;
 			}
 			function studentSex(){
 				strSex = "";
-			    strSex +=student[2].value;          
+			    strSex =student[2].value;          
 				document.getElementById("sex").innerHTML = strSex;
 			}
 			function changeBackGroundColor()
@@ -47,7 +47,7 @@
 			}
 			function DoHomeWork(){
 				var strName = "";
-			    strName +=student[0].value;
+			    strName =student[0].value;
 			    alert(strName+"已经开始做作业了！");
 			}
 		</script>
