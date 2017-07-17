@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+			<label>姓名:</label>
+			<input type="text" / >
+			<br />
+			<label>年龄:</label>
+			<input type="text" />
+			<br />
+			<label>性别:</label>
+			<input type="text" />
+			<button id = "blue" onclick="studentName();studentAge();studentSex(); changeBackGroundColor()">注册</button>
+		<div id = "color" style="display: none;" >
+			<p>注册姓名为:<span id="name"></span></p>
+			<p>注册年龄为:<span id  = "age"></span></p>
+			<p>注册性别为:<span id = "sex"></span></p>
+		</div>
+		<br />
+		<button style="background-color: lightgrey;" onclick="DoHomeWork()">做作业</button>
+		<script type="text/javascript">
+			var student = document.getElementsByTagName("input");
+			function studentName(){
+				var strName = "";
+			    strName +=student[0].value;          
+				document.getElementById("name").innerHTML = strName;
+			}
+			function studentAge(){
+				strAge = "";
+			    strAge +=student[1].value;          
+				document.getElementById("age").innerHTML = strAge;
+			}
+			function studentSex(){
+				strSex = "";
+			    strSex +=student[2].value;          
+				document.getElementById("sex").innerHTML = strSex;
+			}
+			function changeBackGroundColor()
+			{
+				var color = document.getElementById("color");
+				color.setAttribute("style","background-color:lightseagreen;");
+				var blue = document.getElementById("blue");
+				blue.setAttribute("style","background-color:lightseagreen;");
+			}
+			function DoHomeWork(){
+				var strName = "";
+			    strName +=student[0].value;
+			    alert(strName+"已经开始做作业了！");
+			}
+		</script>
+	</body>
+</html>
+
